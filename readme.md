@@ -21,7 +21,7 @@ translator.supportedLanguages();
 
 translator
   .TranslateLanguageData({
-    sentencesToTranslate: ["hello here i am", "HI hello"],
+    listOfWordsToTranslate: ["hello here i am", "HI hello"],
     fromLanguage: "en",
     toLanguage: "hi",
   })
@@ -65,7 +65,7 @@ openGoogleTranslator
 
 ## Inputs
 
-- `sentencesToTranslate`: An array of sentences to be translated.
+- `listOfWordsToTranslate`: An array of sentences to be translated.
 - `fromLanguage`: The language code of the original text (e.g., "en" for English).
 - `toLanguage`: The language code of the target translation (e.g., "hi" for HIndi).
 
