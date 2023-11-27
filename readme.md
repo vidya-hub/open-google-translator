@@ -46,7 +46,7 @@ eu: "Basque",......}`
 1.Include the script in your HTML file:
 
 ```html
-<script src="dist/bundle.js"></script>
+<script src="https://cdn.statically.io/gh/vidya-hub/open-google-translator/main/dist/bundle.js"></script>
 ```
 
 2.Access the package methods using the `openGoogleTranslator` variable:
