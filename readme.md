@@ -73,7 +73,7 @@ openGoogleTranslator
 
 The output consists of an array of objects, each containing the original and translated sentences.
 
-```json
+```js
 [
   { original: "hello here i am", translation: "नमस्ते मैं यहाँ हूँ" },
   { original: "HI hello", translation: "हाय हैलो" },
