@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Translator Test</title>
+  </head>
+  <body>
+    <style>
+      .textAreas {
+        display: flex;
+      }
+      textarea {
+        padding: 10px;
+        margin-right: 10px;
+      }
+    </style>
+    <h1 id="word">Google Translator Test</h1>
+    <script src="../dist/bundle.js"></script>
+    <select id="languageDropdown">
+      <option value="">-- Select Language --</option>
+    </select>
+    <br />
+    <br />
+    <div class="textAreas">
+      <textarea id="textToTranslate" onchange="" cols="40" rows="5"></textarea>
+      <textarea id="textToDisplay" onchange="" cols="40" rows="5"></textarea>
+    </div>
+    <script>
+      const languages = openGoogleTranslator.supportedLanguages();
+      var dropdown = document.getElementById("languageDropdown");
+      for (const code in languages) {
+        if (languages.hasOwnProperty(code)) {
+          var option = document.createElement("option");
+          option.value = code;
+          option.text = languages[code];
+          dropdown.appendChild(option);
+        }
+      }
+      async function testTranslation() {
+        var textToTranslate = document.getElementById("textToTranslate");
+        var textToDisplay = document.getElementById("textToDisplay");
+        var dropdown = document.getElementById("languageDropdown");
+
+        var selectedLanguageCode = dropdown.value;
+        var enteredText = textToTranslate.value;
+        var sentenceToTranslate = [enteredText];
+
+        var translatedData = await openGoogleTranslator.TranslateLanguageData({
+          fromLanguage: "en",
+          toLanguage:
+            selectedLanguageCode.length == 0 ? "en" : selectedLanguageCode,
+          listOfWordsToTranslate: sentenceToTranslate,
+        });
+        textToDisplay.value = translatedData[0]["translation"];
+        console.log(translatedData[0]["translation"]);
+      }
+    </script>
+    <br />
+    <br />
+    <button
+      id="trnButton"
+      style="
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 8px;
+        background-color: #3498db;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      "
+      onclick="testTranslation()"
+    >
+      Translate
+    </button>
+  </body>
+</html>
