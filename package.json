@@ -1,6 +1,6 @@
 {
   "name": "open-google-translator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A versatile and easy-to-use NPM package that leverages the power of the Google Translator API",
   "main": "src/index.js",
   "directories": {
@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/vidya-hub/open-google-translator#readme",
   "dependencies": {
-    "open-google-translator": "^1.0.2"
+    "open-google-translator": "^1.0.3"
   }
 }
