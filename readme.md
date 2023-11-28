@@ -54,7 +54,7 @@ eu: "Basque",......}`
 ```javascript
 openGoogleTranslator
   .TranslateLanguageData({
-    sentenceToTranslate: ["hello here i am", "HI hello"],
+    listOfWordsToTranslate: ["hello here i am", "HI hello"],
     fromLanguage: "en",
     toLanguage: "te",
   })
