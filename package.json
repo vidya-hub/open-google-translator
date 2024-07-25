@@ -20,7 +20,6 @@
   },
   "homepage": "https://github.com/vidya-hub/open-google-translator#readme",
   "dependencies": {
-    "open-google-translator": "^1.0.4"
   },
   "keywords": [
     "translator",
