@@ -3,6 +3,7 @@
   "version": "1.0.4",
   "description": "A versatile and easy-to-use NPM package that leverages the power of the Google Translator API",
   "main": "src/index.js",
+  "types": "types.d.ts",
   "directories": {
     "example": "example"
   },
@@ -28,5 +29,10 @@
     "free-google-translator",
     "open-google-translator",
     "translate"
-  ]
+  ],
+  "devDependencies": {
+    "@types/node": "^20.14.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
 }
