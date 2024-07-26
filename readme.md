@@ -32,24 +32,29 @@ translator
 
 - `translator.supportedLanguages();` this method will provide pair of language iso639-1 language codes with respective language original names
 
-  Example: `{
-af: "Afrikaans",
-sq: "Albanian",
-am: "Amharic",
-ar: "Arabic",
-hy: "Armenian",
-az: "Azerbaijani",
-eu: "Basque",......}`
+  Example:
+
+  ```json
+  {
+    af: "Afrikaans",
+    sq: "Albanian",
+    am: "Amharic",
+    ar: "Arabic",
+    hy: "Armenian",
+    az: "Azerbaijani",
+    eu: "Basque",......
+  }
+  ```
 
 ### Browser
 
-1.Include the script in your HTML file:
+1. Include the script in your HTML file:
 
 ```html
 <script src="https://cdn.statically.io/gh/vidya-hub/open-google-translator/main/dist/bundle.js"></script>
 ```
 
-2.Access the package methods using the `openGoogleTranslator` variable:
+2. Access the package methods using the `openGoogleTranslator` variable:
 
 ```javascript
 openGoogleTranslator
