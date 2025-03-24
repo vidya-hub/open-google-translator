@@ -70,6 +70,7 @@ async function translateText({
     }));
   } catch (error) {
     console.error("Error:", error);
+    throw new Error("Translation API Error: " + error.message);
   }
   return _result;
 }
