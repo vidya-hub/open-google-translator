@@ -1,6 +1,7 @@
 # open-google-translator
 
-![npm version](https://img.shields.io/npm/v/open-google-translator.svg) ![license](https://img.shields.io/npm/l/open-google-translator.svg)
+[![npm version](https://img.shields.io/npm/v/open-google-translator.svg)](https://www.npmjs.com/package/open-google-translator)
+[![license](https://img.shields.io/npm/l/open-google-translator.svg)](https://github.com/vidya-hub/open-google-translator/blob/main/LICENSE)
 
 A versatile and easy-to-use NPM package that leverages the power of the Google Translator API. With support for 104 languages, this package can seamlessly translate text in both web and Node.js environments.
 
